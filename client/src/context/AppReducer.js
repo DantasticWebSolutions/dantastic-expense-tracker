@@ -1,4 +1,4 @@
-export default (state, action) => {
+const def = (state, action) => {
   switch(action.type) {
     case 'GET_TRANSACTIONS':
       return {
@@ -24,4 +24,5 @@ export default (state, action) => {
     default:
       return state;
   }
-}
+};
+export default def;
